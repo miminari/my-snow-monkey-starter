@@ -1,0 +1,46 @@
+{
+  "name": "photosynthesic-my-snow-monkey",
+  "version": "0.0.1",
+  "description": "My Snow Monkey Starter Kit",
+  "main": "build/index.js",
+  "scripts": {
+    "sass": "node-sass --output-style expanded --indent-width 4 wp-content/plugins/my-snow-monkey/src/scss/style.scss wp-content/plugins/my-snow-monkey/src/style.css & node-sass --output-style expanded --indent-width 4 wp-content/plugins/my-snow-monkey/src/scss/editor-style.scss wp-content/plugins/my-snow-monkey/src/editor-style.css",
+    "autoprefix": "npx postcss wp-content/plugins/my-snow-monkey/src/**/*.css --use autoprefixer -d wp-content/plugins/my-snow-monkey/src/ --no-map",
+    "svginline": "npx postcss wp-content/plugins/my-snow-monkey/src/**/*.css --use postcss-inline-svg -d wp-content/plugins/my-snow-monkey/src/ --no-map",
+    "lint:css": "wp-scripts lint-style 'wp-content/plugins/my-snow-monkey/src/**/*.css' --fix",
+    "build:css": "npm run sass && npx postcss wp-content/plugins/my-snow-monkey/src/**/*.css --use postcss-inline-svg autoprefixer -d wp-content/plugins/my-snow-monkey/build/ --no-map && npm run lint:css",
+    "minify:css": "node-sass wp-content/plugins/my-snow-monkey/src/style.css wp-content/plugins/my-snow-monkey/build/style.min.css --output-style compressed",
+    "watch:css": "nodemon -e scss -x \"npm run build:css\"",
+    "release:css": "npm run build:css && npm run minify:css",
+    "lint:js": "wp-scripts lint-js './wp-content/plugins/my-snow-monkey/src/js'",
+    "build:js": "webpack --mode development",
+    "release:js": "webpack --mode production",
+    "init:colors": "node wp-content/plugins/my-snow-monkey/src/js/color-picker.js",
+    "rimraf": "rimraf wp-content/plugins/my-snow-monkey/src/svg/dist",
+    "imageminsvgo": "node wp-content/plugins/my-snow-monkey/src/svg/imagemin-svgo.js",
+    "prebuildsprite": "npm run imageminsvgo",
+    "buildsprite": "svgstore -o wp-content/plugins/my-snow-monkey/src/svg/dist/svgsprite.svg wp-content/plugins/my-snow-monkey/src/svg/dist/icons/**/*.svg --inline",
+    "embedsprite": "node wp-content/plugins/my-snow-monkey/src/svg/embed-sprite.js",
+    "svgsprite": "npm run rimraf && npm run buildsprite && npm run embedsprite"
+  },
+  "author": "photosynthesic",
+  "license": "GPL-2.0+",
+  "devDependencies": {
+    "@wordpress/scripts": "7.1.2",
+    "autoprefixer": "^9.7.4",
+    "postcss-inline-svg": "^4.1.0"
+  },
+  "dependencies": {
+    "@ixkaito/imagemin": "^0.1.0",
+    "cpx": "^1.5.0",
+    "ejs": "^3.0.1",
+    "glightbox": "^2.0.6",
+    "imagemin": "^7.0.1",
+    "imagemin-svgo": "^7.1.0",
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2",
+    "postcss": "^7.0.27",
+    "postcss-cli": "^7.1.0",
+    "svgstore-cli": "^1.3.1"
+  }
+}

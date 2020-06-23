@@ -1,0 +1,30 @@
+/**
+ * The plugin Snow Monkey Customizer
+ *
+ */
+
+// ======================================== Config and Functions
+@import "config";
+
+// ======================================== BASE STYLES
+@import "base";
+
+// ======================================== UTILITY STYLES
+
+
+// ======================================== COMPONENT STYLES
+@import "components";
+
+// ======================================== WP BLOCK STYLES
+@import "wp_block";
+
+// ======================================== GLOBAL STYLES
+@import "global";
+
+// ======================================== PAGES, SINGLE STYLES
+@import "pages";
+
+// ======================================== GLIGHTBOX STYLES
+/* stylelint-disable */
+@import "vender/glightbox.min";
+/* stylelint-enable */

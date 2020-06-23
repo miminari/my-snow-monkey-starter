@@ -1,0 +1,12 @@
+wp-content/themes/snow-monkey
+wp-content/plugins/snow-monkey-diet
+
+/vendor/*
+/wpcs/*
+node_modules
+.DS_Store
+
+*.log
+*.sql
+*.sqlite
+.vscode/

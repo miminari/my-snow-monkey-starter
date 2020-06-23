@@ -1,0 +1,38 @@
+$baseFontSize: 16;
+
+// == pixel to rem ==
+@function rem($pixels, $context: $baseFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}
+// == hex to rgb ==
+@function hexToRGBString($hexColor) {
+  @return "#{red($hexColor)},#{green($hexColor)},#{blue($hexColor)}";
+}
+
+@import "color_config";
+
+:root {
+  // フォント
+
+  // カラーを変数として書き出し
+  @each $key, $color in $theme-colors {
+    --color-#{$key}: #{$color};
+    --color-#{$key}-rgb: #{red($color)}, #{green($color)}, #{blue($color)};
+  }
+
+}
+
+/* stylelint-disable */
+// for svg inline ( postcss-inline-svg )
+@svg-load arrow-right url(svg/icons/c-icon--alw-next.svg) {
+  fill: var(--color-primary);
+}
+/* stylelint-enable */

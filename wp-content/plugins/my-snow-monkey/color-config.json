@@ -1,0 +1,11 @@
+{
+    "primary": "#0011B2",
+    "secondary": "#FFC700",
+    "base": "#F9F9F9",
+    "body": "#1A1A1A",
+    "gray01": "#E5E5E5",
+    "gray02": "#989898",
+    "gray03": "#565656",
+    "error-text": "#9D2D0B",
+    "clear-text": "#3F5D29"
+}
