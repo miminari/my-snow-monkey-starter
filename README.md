@@ -4,6 +4,8 @@ Snow Monkeyのカスタマイズをするプラグイン生成のスターター
 
 ※ Snow Monkey 本体、Snow Monkey Dietは含まれていません。公式サイトより購入してご利用ください。
 
+[glightbox](https://biati-digital.github.io/glightbox/) をgallery blockのlightboxとして利用しています。
+
 ## Install
 
 ### CSS, JSのbuildを利用する
@@ -18,9 +20,9 @@ Snow Monkeyのカスタマイズをするプラグイン生成のスターター
 
 `wp-env start`
 
-で`http://localhost:54321`にSnow Monkeyをテーマとして有効化し、Snow Monkey Blocks, Snow Monkey Editor, Snow Monkey Formsがインストールされた環境が立ち上がります。
+で`http://localhost:54321`にSnow Monkeyをテーマとして有効化し、wp lazy loading, Snow Monkey Diet, Snow Monkey Blocks, Snow Monkey Editor, Snow Monkey Formsがインストールされた環境が立ち上がります。
 
-[wp-env](https://github.com/WordPress/gutenberg/tree/master/packages/env#readme)
+[wp-envについてはこちら](https://github.com/WordPress/gutenberg/tree/master/packages/env#readme)
 
 ## Use
 

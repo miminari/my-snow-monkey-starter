@@ -1,0 +1,30 @@
+@import "color_config";
+
+// ========================================== config
+// $baseFontSize : 16;
+
+// ========================================== functions
+
+// == pixel to rem ==
+@function rem($pixels, $context: $baseFontSize) {
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+
+    @return $pixels / $context * 1rem;
+}
+// == hex to rgb ==
+@function hexToRGBString($hexColor) {
+    @return "#{red($hexColor)},#{green($hexColor)},#{blue($hexColor)}";
+}
+
+/* stylelint-disable */
+// for svg inline ( postcss-inline-svg )
+// @svg-load arrow-right url(svg/icons/c-icon--alw-next.svg) {
+//     fill: var(--color-primary);
+// }
+/* stylelint-enable */

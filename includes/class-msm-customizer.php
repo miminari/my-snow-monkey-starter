@@ -5,7 +5,7 @@
  * @since      0.0.1
  *
  * @package    my-snow-monkey
- * @subpackage my-snow-monkey/includes
+ * @subpackage includes
  */
 
 if ( ! class_exists( 'Msm_Customizer' ) ) {
@@ -32,6 +32,14 @@ if ( ! class_exists( 'Msm_Customizer' ) ) {
 					}
 				},
 				12
+			);
+			// カスタムカラーをエディターに反映.
+			$colors = $this->get_custom_color();
+			add_filter(
+				'snow_monkey_editor_color_palette',
+				function () use ( $colors ) {
+					return $colors;
+				}
 			);
 		}
 

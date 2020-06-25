@@ -1,0 +1,22 @@
+/* stylelint-disable */
+/* stylelint-enable */
+:root {
+    --color-primary: #3D8CB8;
+    --color-primary-rgb: 61, 140, 184;
+    --color-secondary: #E3A71E;
+    --color-secondary-rgb: 227, 167, 30;
+    --color-base: #F2E6B6;
+    --color-base-rgb: 242, 230, 182;
+    --color-body: #4C2B11;
+    --color-body-rgb: 76, 43, 17;
+    --color-gray01: #E5E5E5;
+    --color-gray01-rgb: 229, 229, 229;
+    --color-gray02: #989898;
+    --color-gray02-rgb: 152, 152, 152;
+    --color-gray03: #565656;
+    --color-gray03-rgb: 86, 86, 86;
+    --color-error-text: #9D2D0B;
+    --color-error-text-rgb: 157, 45, 11;
+    --color-clear-text: #3F5D29;
+    --color-clear-text-rgb: 63, 93, 41;
+}
