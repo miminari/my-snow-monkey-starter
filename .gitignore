@@ -1,5 +1,4 @@
-wp-content/themes/snow-monkey
-wp-content/plugins/snow-monkey-diet
+/wp-content/*
 
 /vendor/*
 /wpcs/*

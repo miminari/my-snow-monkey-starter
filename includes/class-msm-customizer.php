@@ -34,5 +34,34 @@ if ( ! class_exists( 'Msm_Customizer' ) ) {
 				12
 			);
 		}
+
+		/**
+		 * 外部JSONからカスタムカラーを取得する.
+		 */
+		private function get_custom_color() {
+			$url        = MSM_CUSTOMISER_PATH . '/color-config.json';
+			$colors     = $this->get_json_data( $url );
+			$arr_colors = array();
+			foreach ( $colors as $slug => $color ) {
+				$this_color   = array(
+					'name'  => $slug,
+					'slug'  => $slug,
+					'color' => $color,
+				);
+				$arr_colors[] = $this_color;
+			}
+			return $arr_colors;
+		}
+
+		/**
+		 * 外部JSONを指定して配列を返す.
+		 *
+		 * @param string $url json file's url.
+		 */
+		private function get_json_data( $url ) {
+			$json = file_get_contents( $url );
+			$arr  = json_decode( $json, true );
+			return $arr;
+		}
 	}
 }
