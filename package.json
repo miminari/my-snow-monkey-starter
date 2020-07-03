@@ -15,7 +15,7 @@
     "watch:css": "nodemon -e scss -x \"npm run build:css\"",
     "release:css": "npm run build:css && npm run minify:css",
     "lint:js": "wp-scripts lint-js './src/js'",
-    "build:js": "webpack --mode development",
+    "build:js": "npm runwebpack --mode development",
     "release:js": "webpack --mode production",
     "init:colors": "node color-picker.js",
     "rimraf": "rimraf src/svg/dist",

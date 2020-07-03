@@ -2,7 +2,7 @@
 
 Snow Monkeyのカスタマイズをするプラグイン生成のスターターキットです。
 
-※ Snow Monkey 本体、Snow Monkey Dietは含まれていません。公式サイトより購入してご利用ください。
+※ Snow Monkey 本体、Snow Monkey Dietは含まれていません。
 
 [glightbox](https://biati-digital.github.io/glightbox/) をgallery blockのlightboxとして利用しています。
 

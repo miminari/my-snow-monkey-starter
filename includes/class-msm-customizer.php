@@ -10,7 +10,7 @@
 
 if ( ! class_exists( 'Msm_Customizer' ) ) {
 	/**
-	 * Tokion Customizer
+	 * Msm Customizer
 	 */
 	class Msm_Customizer {
 		/**

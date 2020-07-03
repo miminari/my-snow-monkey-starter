@@ -34,3 +34,11 @@ define( 'MSM_CUSTOMISER_PATH', untrailingslashit( plugin_dir_path( __FILE__ ) ) 
 require MSM_CUSTOMISER_PATH . '/includes/class-msm-customizer.php';
 $msm_customizer = new Msm_Customizer();
 $msm_customizer->init();
+
+/*
+ * カスタムテンプレートを利用しない場合はコメントアウト
+ */
+require MSM_CUSTOMISER_PATH . '/includes/class-msm-template.php';
+$msm_template = new Msm_Template();
+$msm_template->init();
+
