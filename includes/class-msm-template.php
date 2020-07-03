@@ -1,6 +1,6 @@
 <?php
 /**
- * The file that defines the core plugin class
+ * 固定ページのページテンプレートを使えるようにする.
  *
  * @since      0.0.1
  *
@@ -13,7 +13,6 @@ if ( ! class_exists( 'Msm_Template' ) ) {
 	 * Msm Customizer
 	 */
 	class Msm_Template {
-		// 固定ページのページテンプレートを使えるようにするフィルター.
 		/**
 		 * Init
 		 */

@@ -5,7 +5,14 @@
   @each $key, $color in $theme-colors {
     --color-#{$key}: #{$color};
     --color-#{$key}-rgb: #{red($color)}, #{green($color)}, #{blue($color)};
+    @if $key == base {
+      --_background-color: #{$color};
+    }
+    @if $key == body {
+      --_color-text: #{$color};
+    }
   }
-
+  // --- Snow Monkey Variables
+  // --wp-bock-width: 1280px;
+  // --_container-max-width: 1280px;
 }
-

@@ -8,6 +8,21 @@ Snow Monkeyのカスタマイズをするプラグイン生成のスターター
 
 ## Install
 
+Node.js と npm
+https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+
+Docker
+https://www.docker.com/get-started
+
+wp-env
+https://www.npmjs.com/package/@wordpress/env
+
+composer
+https://getcomposer.org/doc/00-intro.md
+
+1. Snow Monkey を`./wp-content/themes/snow-monkey` に、Snow Monkey Dietを`./wp-content/plugins/snow-monkey-diet` に置いてください。
+2. `wp-env start` でテーマがSnow MonkeyでSnow Monkey Block, Snow Monkey Editor, Snow Monkey Formが有効化されたローカル環境が`http://localhost:54321` で立ち上がります
+
 ### CSS, JSのbuildを利用する
 
 `npm install`
@@ -20,7 +35,7 @@ Snow Monkeyのカスタマイズをするプラグイン生成のスターター
 
 `wp-env start`
 
-で`http://localhost:54321`にSnow Monkeyをテーマとして有効化し、wp lazy loading, Snow Monkey Diet, Snow Monkey Blocks, Snow Monkey Editor, Snow Monkey Formsがインストールされた環境が立ち上がります。
+で`http://localhost:54321`にSnow Monkeyをテーマとして有効化し Snow Monkey Diet, Snow Monkey Blocks, Snow Monkey Editor, Snow Monkey Formsがインストールされた環境が立ち上がります。
 
 [wp-envについてはこちら](https://github.com/WordPress/gutenberg/tree/master/packages/env#readme)
 

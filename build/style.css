@@ -5,16 +5,18 @@
 /* stylelint-disable */
 /* stylelint-enable */
 :root {
-    --color-primary: #3D8CB8;
-    --color-primary-rgb: 61, 140, 184;
-    --color-secondary: #E3A71E;
-    --color-secondary-rgb: 227, 167, 30;
-    --color-base: #F2E6B6;
-    --color-base-rgb: 242, 230, 182;
-    --color-body: #4C2B11;
-    --color-body-rgb: 76, 43, 17;
-    --color-gray01: #E5E5E5;
-    --color-gray01-rgb: 229, 229, 229;
+    --color-primary: #BA584F;
+    --color-primary-rgb: 186, 88, 79;
+    --color-secondary: #AA9C7D;
+    --color-secondary-rgb: 170, 156, 125;
+    --color-base: #E9E7E3;
+    --color-base-rgb: 233, 231, 227;
+    --_background-color: #E9E7E3;
+    --color-body: #040402;
+    --color-body-rgb: 4, 4, 2;
+    --_color-text: #040402;
+    --color-gray01: #DEDEDE;
+    --color-gray01-rgb: 222, 222, 222;
     --color-gray02: #989898;
     --color-gray02-rgb: 152, 152, 152;
     --color-gray03: #565656;

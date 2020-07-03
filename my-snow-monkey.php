@@ -42,3 +42,9 @@ require MSM_CUSTOMISER_PATH . '/includes/class-msm-template.php';
 $msm_template = new Msm_Template();
 $msm_template->init();
 
+/*
+ * アーカイブ系をカスタムしない場合はコメントアウト
+ */
+require MSM_CUSTOMISER_PATH . '/includes/class-msm-archives.php';
+$msm_archives = new Msm_Archives();
+$msm_archives->init();
