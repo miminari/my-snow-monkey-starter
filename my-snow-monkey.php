@@ -8,7 +8,7 @@
  * @wordpress-plugin
  * Plugin Name:       My Snow Monkey Starter Kit
  * Description:       Let's customize Snow Monkey.
- * Version:           0.0.1
+ * Version:           1.0.0
  * Author:            Photosynthesic
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
@@ -24,7 +24,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Snow Monkey 以外のテーマを利用している場合は有効化してもカスタマイズが反映されないようにする
  */
 $msm_theme = wp_get_theme( get_template() );
-if ( 'snow-monkey' !== $msm_theme->template && 'snow-monkey/resources' !== $theme->template ) {
+if ( 'snow-monkey' !== $msm_theme->template && 'snow-monkey/resources' !== $msm_theme->template ) {
 	return;
 }
 
