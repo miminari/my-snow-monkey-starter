@@ -21,7 +21,7 @@ if ( ! class_exists( 'Msm_Customizer' ) ) {
 			add_action(
 				'wp_enqueue_scripts',
 				function () {
-					if ( 'WP_DEBUG' ) {
+					if ( WP_DEBUG ) {
 						// Debug Mode.
 						wp_enqueue_style( 'msm-style', MSM_CUSTOMIZER_URL . '/build/style.css', false, filemtime( MSM_CUSTOMISER_PATH . '/build/style.css' ) );
 						wp_enqueue_script( 'msm-main-script', MSM_CUSTOMIZER_URL . '/build/main.js', array(), filemtime( MSM_CUSTOMISER_PATH . '/build/main.js' ), true );
