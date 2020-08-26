@@ -1,9 +1,8 @@
 {
-    "core": "WordPress/WordPress#5.4.2",
+    "core": "WordPress/WordPress#5.5",
     "plugins": [
         "./wp-content/plugins/snow-monkey-diet",
         "./",
-        "WordPress/wp-lazy-loading",
         "https://downloads.wordpress.org/plugin/snow-monkey-blocks.8.8.0.zip",
         "https://downloads.wordpress.org/plugin/snow-monkey-forms.0.8.0.zip",
         "https://downloads.wordpress.org/plugin/snow-monkey-editor.2.1.2.zip"
