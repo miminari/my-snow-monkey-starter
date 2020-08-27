@@ -41,6 +41,18 @@ if ( ! class_exists( 'Msm_Customizer' ) ) {
 					return $colors;
 				}
 			);
+			/**
+			 * Add custom editor style
+			 * カスタムエディタースタイルを反映.
+			 *
+			 * @return void
+			 */
+			function my_editor_style_setup() {
+				add_theme_support( 'editor-styles' );
+				// テーマからの相対パスで指定.
+				add_editor_style( '../../plugins/my-snow-monkey-starter/build/editor-style.css' );
+			}
+			add_action( 'after_setup_theme', 'my_editor_style_setup', 12 );
 		}
 
 		/**
