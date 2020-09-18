@@ -9,3 +9,5 @@ node_modules
 *.sql
 *.sqlite
 .vscode/
+
+.wp-env.override.json

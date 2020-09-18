@@ -1,15 +1,19 @@
 {
-    "core": "WordPress/WordPress#5.5",
+    "core": "WordPress/WordPress#master",
     "plugins": [
         "./wp-content/plugins/snow-monkey-diet",
         "./",
-        "https://downloads.wordpress.org/plugin/snow-monkey-blocks.8.8.0.zip",
-        "https://downloads.wordpress.org/plugin/snow-monkey-forms.0.8.0.zip",
-        "https://downloads.wordpress.org/plugin/snow-monkey-editor.2.1.2.zip"
+        "https://downloads.wordpress.org/plugin/snow-monkey-blocks.zip",
+        "https://downloads.wordpress.org/plugin/snow-monkey-forms.zip",
+        "https://downloads.wordpress.org/plugin/snow-monkey-editor.zip"
     ],
     "themes": [
         "./wp-content/themes/snow-monkey"
     ],
     "port": 54321,
-    "testsPort": 54322
+    "env": {
+        "tests": {
+            "port": 54322
+        }
+    }
 }
