@@ -3,6 +3,7 @@
     "plugins": [
         "./wp-content/plugins/snow-monkey-diet",
         "./",
+        "https://downloads.wordpress.org/plugin/gutenberg.zip",
         "https://downloads.wordpress.org/plugin/snow-monkey-blocks.zip",
         "https://downloads.wordpress.org/plugin/snow-monkey-forms.zip",
         "https://downloads.wordpress.org/plugin/snow-monkey-editor.zip"

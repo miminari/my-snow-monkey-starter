@@ -1,10 +1,12 @@
 {
   "name": "photosynthesic-my-snow-monkey",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "My Snow Monkey Starter Kit",
   "main": "build/index.js",
   "scripts": {
+    "start": "wp-env start && open http://localhost:54321",
     "build": "npm run build:css & npm run build:js",
+    "watch": "npm run watch:css & npm run watch:js",
     "release": "npm run release:css & npm run release:js",
     "sass": "node-sass --output-style expanded --indent-width 4 src/scss/style.scss src/style.css & node-sass --output-style expanded --indent-width 4 src/scss/editor-style.scss src/editor-style.css",
     "autoprefix": "npx postcss src/**/*.css --use autoprefixer -d src/ --no-map",
@@ -16,6 +18,7 @@
     "release:css": "npm run build:css && npm run minify:css",
     "lint:js": "wp-scripts lint-js './src/js'",
     "build:js": "npx webpack --mode development",
+    "watch:js": "nodemon -e js -x \"npx webpack --mode development\"",
     "release:js": "npx webpack --mode production",
     "init:colors": "node color-picker.js",
     "rimraf": "rimraf src/svg/dist",

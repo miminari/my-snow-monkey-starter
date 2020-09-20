@@ -36,7 +36,7 @@ if ( ! class_exists( 'Msm_Archives' ) ) {
 			add_filter(
 				'snow_monkey_entry_summary_title_num_words',
 				function( $num ) {
-					return class_exists( 'multibyte_patch' ) ? 65 : 65;
+					return class_exists( 'multibyte_patch' ) ? 32 : 65;
 				},
 				11,
 				1

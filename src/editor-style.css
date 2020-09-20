@@ -1,24 +1,24 @@
 /* stylelint-disable */
 /* stylelint-enable */
 :root {
-	--color-primary: #ba584f;
-	--color-primary-rgb: 186, 88, 79;
-	--color-secondary: #aa9c7d;
-	--color-secondary-rgb: 170, 156, 125;
-	--color-base: #e9e7e3;
-	--color-base-rgb: 233, 231, 227;
-	--_background-color: #e9e7e3;
-	--color-body: #040402;
-	--color-body-rgb: 4, 4, 2;
-	--_color-text: #040402;
-	--color-gray01: #dedede;
-	--color-gray01-rgb: 222, 222, 222;
-	--color-gray02: #989898;
-	--color-gray02-rgb: 152, 152, 152;
-	--color-gray03: #565656;
-	--color-gray03-rgb: 86, 86, 86;
-	--color-error-text: #9d2d0b;
-	--color-error-text-rgb: 157, 45, 11;
-	--color-clear-text: #3f5d29;
-	--color-clear-text-rgb: 63, 93, 41;
+    --color-primary: #BA584F;
+    --color-primary-rgb: 186, 88, 79;
+    --color-secondary: #AA9C7D;
+    --color-secondary-rgb: 170, 156, 125;
+    --color-base: #E9E7E3;
+    --color-base-rgb: 233, 231, 227;
+    --_background-color: #E9E7E3;
+    --color-body: #040402;
+    --color-body-rgb: 4, 4, 2;
+    --_color-text: #040402;
+    --color-gray01: #DEDEDE;
+    --color-gray01-rgb: 222, 222, 222;
+    --color-gray02: #989898;
+    --color-gray02-rgb: 152, 152, 152;
+    --color-gray03: #565656;
+    --color-gray03-rgb: 86, 86, 86;
+    --color-error-text: #9D2D0B;
+    --color-error-text-rgb: 157, 45, 11;
+    --color-clear-text: #3F5D29;
+    --color-clear-text-rgb: 63, 93, 41;
 }

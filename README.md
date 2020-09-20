@@ -35,7 +35,13 @@ https://getcomposer.org/doc/00-intro.md
 
 `wp-env start`
 
+または
+
+`npm start`
+
 で`http://localhost:54321`にSnow Monkeyをテーマとして有効化し Snow Monkey Diet, Snow Monkey Blocks, Snow Monkey Editor, Snow Monkey Formsがインストールされた環境が立ち上がります。
+
+※ 2020/09/20現在、themeはインストールされていてもアクティベートされません。
 
 [wp-envについてはこちら](https://github.com/WordPress/gutenberg/tree/master/packages/env#readme)
 
@@ -51,7 +57,11 @@ https://getcomposer.org/doc/00-intro.md
 
 `npm run build`
 
-### 3. release
+### 3. watch
+
+`npm run watch`
+
+### 4. release
 
 `npm run release`
 
