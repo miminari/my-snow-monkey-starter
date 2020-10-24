@@ -21,6 +21,7 @@
     "watch:js": "nodemon -e js -x \"npx webpack --mode development\"",
     "release:js": "npx webpack --mode production",
     "init:colors": "node color-picker.js",
+    "check-licenses": "wp-scripts check-licenses",
     "rimraf": "rimraf src/svg/dist",
     "imageminsvgo": "node src/svg/imagemin-svgo.js",
     "prebuildsprite": "npm run imageminsvgo",
