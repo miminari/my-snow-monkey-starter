@@ -1,6 +1,6 @@
 {
   "name": "photosynthesic-my-snow-monkey",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "My Snow Monkey Starter Kit",
   "main": "build/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "build": "npm run build:css & npm run build:js",
     "watch": "npm run watch:css & npm run watch:js",
     "release": "npm run release:css & npm run release:js",
-    "sass": "node-sass --output-style expanded --indent-width 4 src/scss/style.scss src/style.css & node-sass --output-style expanded --indent-width 4 src/scss/editor-style.scss src/editor-style.css",
+    "sass": "sass --no-source-map src/scss/style.scss:src/style.css & sass --no-source-map src/scss/editor-style.scss:src/editor-style.css",
     "autoprefix": "npx postcss src/**/*.css --use autoprefixer -d src/ --no-map",
     "svginline": "npx postcss src/**/*.css --use postcss-inline-svg -d src/ --no-map",
     "lint:css": "wp-scripts lint-style 'src/**/*.css' --fix",
@@ -34,16 +34,15 @@
   "devDependencies": {
     "@wordpress/scripts": "7.1.2",
     "autoprefixer": "^9.7.4",
-    "postcss-inline-svg": "^4.1.0"
+    "postcss-inline-svg": "^4.1.0",
+    "sass": "^1.27.0"
   },
   "dependencies": {
     "@ixkaito/imagemin": "^0.1.0",
-    "cpx": "^1.5.0",
     "ejs": "^3.0.1",
     "glightbox": "^2.0.6",
     "imagemin": "^7.0.1",
     "imagemin-svgo": "^7.1.0",
-    "node-sass": "^4.13.1",
     "nodemon": "^2.0.2",
     "postcss": "^7.0.27",
     "postcss-cli": "^7.1.0",
