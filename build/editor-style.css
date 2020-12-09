@@ -1,10 +1,10 @@
 /* stylelint-disable */
 /* stylelint-enable */
 :root {
-  --color-primary: #BA584F;
-  --color-primary-rgb: 186, 88, 79;
-  --color-secondary: #AA9C7D;
-  --color-secondary-rgb: 170, 156, 125;
+  --color-accent: #BA584F;
+  --color-accent-rgb: 186, 88, 79;
+  --color-sub-accent: #AA9C7D;
+  --color-sub-accent-rgb: 170, 156, 125;
   --color-base: #E9E7E3;
   --color-base-rgb: 233, 231, 227;
   --_background-color: #E9E7E3;
@@ -21,4 +21,19 @@
   --color-error-text-rgb: 157, 45, 11;
   --color-clear-text: #3F5D29;
   --color-clear-text-rgb: 63, 93, 41;
+  --accent-color: #BA584F;
+  --dark-accent-color: #ab4c43;
+  --light-accent-color: #c16961;
+  --lighter-accent-color: #c87972;
+  --lightest-accent-color: #cf8a84;
+  --sub-accent-color: #AA9C7D;
+  --dark-sub-accent-color: #9e8e6b;
+  --light-sub-accent-color: #b3a68a;
+  --lighter-sub-accent-color: #bbb097;
+  --lightest-sub-accent-color:#c4baa4;
+  --_color-gray: #565656;
+  --_lighter-color-gray: #DEDEDE;
+  --_lighter-color-gray: #efefef;
+  --_lightest-color-gray: #f8f8f8;
+  --_color-text: #040402;
 }

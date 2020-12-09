@@ -1,18 +1,36 @@
+@use "sass:color";
+@use "sass:map";
+
 :root {
   // フォント
 
   // カラーを変数として書き出し
-  @each $key, $color in $theme-colors {
-    --color-#{$key}: #{$color};
-    --color-#{$key}-rgb: #{red($color)}, #{green($color)}, #{blue($color)};
+  @each $key, $color-var in $theme-colors {
+    --color-#{$key}: #{$color-var};
+    --color-#{$key}-rgb: #{red($color-var)}, #{green($color-var)}, #{blue($color-var)};
+
+    // --- For Snow Monkey Variables
     @if $key == base {
-      --_background-color: #{$color};
+      --_background-color: #{$color-var};
     }
     @if $key == body {
-      --_color-text: #{$color};
+      --_color-text: #{$color-var};
     }
   }
   // --- Snow Monkey Variables
-  // --wp-bock-width: 1280px;
-  // --_container-max-width: 1280px;
+  --accent-color: #{map.get($theme-colors, accent)};
+  --dark-accent-color: #{color.scale(map.get($theme-colors, accent), $lightness: -10%)};
+  --light-accent-color: #{color.scale(map.get($theme-colors, accent), $lightness: 10%)};
+  --lighter-accent-color: #{color.scale(map.get($theme-colors, accent), $lightness: 20%)};
+  --lightest-accent-color: #{color.scale(map.get($theme-colors, accent), $lightness: 30%)};
+  --sub-accent-color: #{map.get($theme-colors, sub-accent)};
+  --dark-sub-accent-color: #{color.scale(map.get($theme-colors, sub-accent), $lightness: -10%)};
+  --light-sub-accent-color: #{color.scale(map.get($theme-colors, sub-accent), $lightness: 10%)};
+  --lighter-sub-accent-color: #{color.scale(map.get($theme-colors, sub-accent), $lightness: 20%)};
+  --lightest-sub-accent-color:#{color.scale(map.get($theme-colors, sub-accent), $lightness: 30%)};
+  --_color-gray: #{map.get($theme-colors, gray03)};
+  --_lighter-color-gray: #{map.get($theme-colors, gray01)};
+  --_lighter-color-gray: #{color.scale(map.get($theme-colors, gray01), $lightness: 50%)}; 
+  --_lightest-color-gray: #{color.scale(map.get($theme-colors, gray01), $lightness: 80%)};
+  --_color-text: #{map.get($theme-colors, body)};
 }

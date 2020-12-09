@@ -1,6 +1,6 @@
 {
-    "primary": "#BA584F",
-    "secondary": "#AA9C7D",
+    "accent": "#BA584F",
+    "sub-accent": "#AA9C7D",
     "base": "#E9E7E3",
     "body": "#040402",
     "gray01": "#DEDEDE",
