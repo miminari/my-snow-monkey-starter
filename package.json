@@ -5,7 +5,7 @@
   "main": "build/index.js",
   "scripts": {
     "postinstall": "husky install && composer install",
-    "start": "wp-env start && open http://localhost:54321",
+    "start": "wp-env start && open http://localhost:5432",
     "build": "npm run build:css & npm run build:js",
     "watch": "npm run watch:css & npm run watch:js",
     "release": "npm run release:css & npm run release:js",

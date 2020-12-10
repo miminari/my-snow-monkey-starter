@@ -21,7 +21,7 @@ composer
 https://getcomposer.org/doc/00-intro.md
 
 1. Snow Monkey を`./wp-content/themes/snow-monkey` に、Snow Monkey Dietを`./wp-content/plugins/snow-monkey-diet` に置いてください。
-2. `wp-env start` でテーマがSnow MonkeyでSnow Monkey Block, Snow Monkey Editor, Snow Monkey Formが有効化されたローカル環境が`http://localhost:54321` で立ち上がります
+2. `wp-env start` でテーマがSnow MonkeyでSnow Monkey Block, Snow Monkey Editor, Snow Monkey Formが有効化されたローカル環境が`http://localhost:5432` で立ち上がります
 
 ### CSS, JSのbuildを利用する
 
@@ -39,7 +39,7 @@ https://getcomposer.org/doc/00-intro.md
 
 `npm start`
 
-で`http://localhost:54321`にSnow Monkeyをテーマとして有効化し Snow Monkey Diet, Snow Monkey Blocks, Snow Monkey Editor, Snow Monkey Formsがインストールされた環境が立ち上がります。
+で`http://localhost:5432`にSnow Monkeyをテーマとして有効化し Snow Monkey Diet, Snow Monkey Blocks, Snow Monkey Editor, Snow Monkey Formsがインストールされた環境が立ち上がります。
 
 ※ 2020/09/20現在、themeはインストールされていてもアクティベートされません。
 
