@@ -17,10 +17,17 @@ if ( ! class_exists( 'Msm_Block_Pattern' ) ) {
 		 * construct
 		 */
 		public function __construct() {
-			remove_theme_support( 'core-block-patterns' );
+            add_action( 'after_setup_theme', array( $this, 'remove_core_block_patterns' ), 11 );
 			add_action( 'init', array( $this, 'register_block_pattern_category' ) );
 			add_action( 'init', array( $this, 'register_block_patterns' ) );
-		}
+        }
+        
+        /**
+		 * Remove core block patterns
+		 */
+        public function remove_core_block_patterns() {
+            remove_theme_support( 'core-block-patterns' );
+        }
 
 		/**
 		 * Register custom block pattern category
