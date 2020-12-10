@@ -22,6 +22,7 @@
     "release:js": "npx webpack --mode production",
     "init:colors": "node color-picker.js",
     "check-licenses": "wp-scripts check-licenses",
+    "test:php": "composer format & composer phpcs",
     "rimraf": "rimraf src/svg/dist",
     "imageminsvgo": "node src/svg/imagemin-svgo.js",
     "prebuildsprite": "npm run imageminsvgo",
@@ -34,6 +35,7 @@
   "devDependencies": {
     "@wordpress/scripts": "7.1.2",
     "autoprefixer": "^9.7.4",
+    "husky": "^5.0.4",
     "postcss-inline-svg": "^4.1.0",
     "sass": "^1.27.0"
   },
@@ -51,5 +53,10 @@
   "browserslist": [
     "last 1 version",
     "> 1% in JP"
-  ]
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "test:php"
+    }
+  }
 }

@@ -35,7 +35,7 @@ if ( ! class_exists( 'Msm_Archives' ) ) {
 			// タイトルの文字長を 65 文字にする.
 			add_filter(
 				'snow_monkey_entry_summary_title_num_words',
-				function( $num ) {
+				function( $num ) { // phpcs:ignore Generic.CodeAnalysis.UnusedFunctionParameter.Found
 					return class_exists( 'multibyte_patch' ) ? 32 : 65;
 				},
 				11,

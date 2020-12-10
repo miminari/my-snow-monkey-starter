@@ -79,7 +79,7 @@ if ( ! class_exists( 'Msm_Customizer' ) ) {
 		 * @param string $url json file's url.
 		 */
 		private function get_json_data( $url ) {
-			$json = file_get_contents( $url );
+			$json = file_get_contents( $url ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
 			$arr  = json_decode( $json, true );
 			return $arr;
 		}

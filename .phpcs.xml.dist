@@ -18,9 +18,6 @@
 	<!-- Exclude minified Javascript files. -->
 	<exclude-pattern>*.min.js</exclude-pattern>
 
-	<!-- Exclude PHPUnit files. -->
-	<exclude-pattern>*/tests/bootstrap.php</exclude-pattern>
-
 	<!-- Include the WordPress-Extra standard. -->
 	<rule ref="WordPress-Extra">
 		<!--
@@ -40,6 +37,12 @@
 		<exclude name="WordPress.Security.EscapeOutput"/>
 		-->
 	</rule>
+
+	<!-- 出力に色を適用 -->
+    <arg name="colors" />
+
+    <!-- オプション p:進捗表示  s:エラー表示時にルールを表示 -->
+    <arg value="ps" />
 
 	<!-- Let's also check that everything is properly documented. -->
 	<rule ref="WordPress-Docs"/>
