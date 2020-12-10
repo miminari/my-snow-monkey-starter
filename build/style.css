@@ -11,10 +11,8 @@
   --color-sub-accent-rgb: 170, 156, 125;
   --color-base: #E9E7E3;
   --color-base-rgb: 233, 231, 227;
-  --_background-color: #E9E7E3;
   --color-body: #040402;
   --color-body-rgb: 4, 4, 2;
-  --_color-text: #040402;
   --color-gray01: #DEDEDE;
   --color-gray01-rgb: 222, 222, 222;
   --color-gray02: #989898;
@@ -25,6 +23,9 @@
   --color-error-text-rgb: 157, 45, 11;
   --color-clear-text: #3F5D29;
   --color-clear-text-rgb: 63, 93, 41;
+  --_background-color: #E9E7E3;
+  --_color-text: #040402;
+  --header-text-color: #262613;
   --accent-color: #BA584F;
   --dark-accent-color: #ab4c43;
   --light-accent-color: #c16961;
@@ -36,10 +37,9 @@
   --lighter-sub-accent-color: #bbb097;
   --lightest-sub-accent-color:#c4baa4;
   --_color-gray: #565656;
-  --_lighter-color-gray: #DEDEDE;
+  --_light-color-gray: #DEDEDE;
   --_lighter-color-gray: #efefef;
   --_lightest-color-gray: #f8f8f8;
-  --_color-text: #040402;
 }
 
 /* stylelint-disable */

@@ -48,3 +48,15 @@ $msm_template->init();
 require MSM_CUSTOMISER_PATH . '/includes/class-msm-archives.php';
 $msm_archives = new Msm_Archives();
 $msm_archives->init();
+
+/*
+ * ブロックスタイルをカスタムしない場合はコメントアウト
+ */
+require MSM_CUSTOMISER_PATH . '/includes/class-msm-block-styles.php';
+$msm_archives = new Msm_Block_Styles();
+
+/*
+ * ブロックパターンをカスタムしない場合はコメントアウト
+ */
+require MSM_CUSTOMISER_PATH . '/includes/class-msm-block-pattern.php';
+$msm_archives = new Msm_Block_Pattern();

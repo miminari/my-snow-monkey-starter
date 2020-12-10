@@ -1,0 +1,6 @@
+{
+	"__file": "wp_block",
+	"title": "ヒーロー",
+	"categories": [ "msn" ],
+	"content": "<!-- wp:cover {\"overlayColor\":\"sub-accent\"} -->\n<div class=\"wp-block-cover has-sub-accent-background-color has-background-dim\"><div class=\"wp-block-cover__inner-container\"><!-- wp:heading {\"textAlign\":\"center\",\"level\":1} -->\n<h1 class=\"has-text-align-center\">Hello, Snow Monkey Freaks!</h1>\n<!-- /wp:heading --></div></div>\n<!-- /wp:cover -->"
+}
