@@ -53,10 +53,5 @@
   "browserslist": [
     "last 1 version",
     "> 1% in JP"
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "test:php"
-    }
-  }
+  ]
 }
