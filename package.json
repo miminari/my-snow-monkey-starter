@@ -4,6 +4,7 @@
   "description": "My Snow Monkey Starter Kit",
   "main": "build/index.js",
   "scripts": {
+    "postinstall": "husky install && composer install",
     "start": "wp-env start && open http://localhost:54321",
     "build": "npm run build:css & npm run build:js",
     "watch": "npm run watch:css & npm run watch:js",
