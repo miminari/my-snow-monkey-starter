@@ -1,6 +1,6 @@
 {
   "name": "photosynthesic-my-snow-monkey",
-  "version": "0.0.3",
+  "version": "1.0.1",
   "description": "My Snow Monkey Starter Kit",
   "main": "build/index.js",
   "scripts": {

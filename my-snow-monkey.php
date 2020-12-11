@@ -8,7 +8,7 @@
  * @wordpress-plugin
  * Plugin Name:       My Snow Monkey Starter Kit
  * Description:       Let's customize Snow Monkey.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Photosynthesic
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
@@ -53,10 +53,10 @@ $msm_archives->init();
  * ブロックスタイルをカスタムしない場合はコメントアウト
  */
 require MSM_CUSTOMISER_PATH . '/includes/class-msm-block-styles.php';
-$msm_archives = new Msm_Block_Styles();
+$msm_block_styles = new Msm_Block_Styles();
 
 /*
  * ブロックパターンをカスタムしない場合はコメントアウト
  */
 require MSM_CUSTOMISER_PATH . '/includes/class-msm-block-pattern.php';
-$msm_archives = new Msm_Block_Pattern();
+$msm_block_pattern = new Msm_Block_Pattern();
