@@ -14,7 +14,7 @@
     "svginline": "npx postcss src/**/*.css --use postcss-inline-svg -d src/ --no-map",
     "lint:css": "wp-scripts lint-style 'src/**/*.css' --fix",
     "build:css": "npm run sass && npx postcss src/**/*.css --use postcss-inline-svg autoprefixer -d build/ --no-map && npm run lint:css",
-    "minify:css": "node-sass build/style.css build/style.min.css --output-style compressed",
+    "minify:css": "sass --style=compressed build/style.css:build/style.min.css",
     "watch:css": "nodemon -e scss -x \"npm run build:css\"",
     "release:css": "npm run build:css && npm run minify:css",
     "lint:js": "wp-scripts lint-js './src/js'",
@@ -43,6 +43,7 @@
   "dependencies": {
     "@ixkaito/imagemin": "^0.1.0",
     "ejs": "^3.0.1",
+    "focus-visible": "^5.2.0",
     "glightbox": "^2.0.6",
     "imagemin": "^7.0.1",
     "imagemin-svgo": "^7.1.0",
