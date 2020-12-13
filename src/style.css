@@ -5,41 +5,128 @@
 /* stylelint-disable */
 /* stylelint-enable */
 :root {
-	--color-accent: #ba584f;
-	--color-accent-rgb: 186, 88, 79;
-	--color-sub-accent: #aa9c7d;
-	--color-sub-accent-rgb: 170, 156, 125;
-	--color-base: #e9e7e3;
-	--color-base-rgb: 233, 231, 227;
-	--color-body: #040402;
-	--color-body-rgb: 4, 4, 2;
-	--color-gray01: #dedede;
-	--color-gray01-rgb: 222, 222, 222;
-	--color-gray02: #989898;
-	--color-gray02-rgb: 152, 152, 152;
-	--color-gray03: #565656;
-	--color-gray03-rgb: 86, 86, 86;
+	--color-accent: #3d8cb8;
+	--color-accent-rgb: 61, 140, 184;
+	--color-sub-accent: #75c5e5;
+	--color-sub-accent-rgb: 117, 197, 229;
+	--color-base: #f9f6f2;
+	--color-base-rgb: 249, 246, 242;
+	--color-body: #352111;
+	--color-body-rgb: 53, 33, 17;
+	--color-gray01: #eceae6;
+	--color-gray01-rgb: 236, 234, 230;
+	--color-gray02: #d5d3cd;
+	--color-gray02-rgb: 213, 211, 205;
+	--color-gray03: #838076;
+	--color-gray03-rgb: 131, 128, 118;
 	--color-error-text: #9d2d0b;
 	--color-error-text-rgb: 157, 45, 11;
 	--color-clear-text: #3f5d29;
 	--color-clear-text-rgb: 63, 93, 41;
-	--_background-color: #e9e7e3;
-	--_color-text: #040402;
-	--header-text-color: #262613;
-	--accent-color: #ba584f;
-	--dark-accent-color: #ab4c43;
-	--light-accent-color: #c16961;
-	--lighter-accent-color: #c87972;
-	--lightest-accent-color: #cf8a84;
-	--sub-accent-color: #aa9c7d;
-	--dark-sub-accent-color: #9e8e6b;
-	--light-sub-accent-color: #b3a68a;
-	--lighter-sub-accent-color: #bbb097;
-	--lightest-sub-accent-color: #c4baa4;
-	--_color-gray: #565656;
-	--_light-color-gray: #dedede;
-	--_lighter-color-gray: #efefef;
-	--_lightest-color-gray: #f8f8f8;
+	--_background-color: #f9f6f2;
+	--_color-text: #352111;
+	--header-text-color: #56361c;
+	--accent-color: #3d8cb8;
+	--dark-accent-color: #377ea6;
+	--light-accent-color: #4c99c4;
+	--lighter-accent-color: #60a4ca;
+	--lightest-accent-color: #74b0d1;
+	--sub-accent-color: #75c5e5;
+	--dark-sub-accent-color: #58b9e0;
+	--light-sub-accent-color: #83cbe8;
+	--lighter-sub-accent-color: #91d1ea;
+	--lightest-sub-accent-color: #9ed6ed;
+	--_color-gray: #838076;
+	--_light-color-gray: #eceae6;
+	--_lighter-color-gray: #f6f5f3;
+	--_lightest-color-gray: #fbfbfa;
+}
+
+.c-copyright {
+	background-color: var(--color-base);
+	color: var(--color-gray03);
+}
+
+.c-drawer,
+.c-drawer-close-zone,
+.c-hamburger-btn {
+	--icon-size: 44px;
+	--icon-inner-size: 24px;
+	--icon-line-width: 1px;
+	--icon-hamburger-margin: 7px;
+}
+
+.l-header:not(.l-header--left) .c-row {
+	flex-direction: row-reverse;
+}
+
+.c-drawer {
+	width: 100vw;
+	max-width: 100vw;
+}
+
+.c-drawer .c-drawer__inner > ul.c-drawer__menu:first-child {
+	position: relative;
+	padding-top: var(--icon-size);
+}
+
+.c-drawer .c-drawer__inner > ul.c-drawer__menu:first-child::before,
+ .c-drawer .c-drawer__inner > ul.c-drawer__menu:first-child::after {
+	content: "";
+	display: inline-block;
+	width: var(--icon-inner-size);
+	height: var(--icon-line-width);
+	background-color: var(--color-base);
+	position: absolute;
+	top: calc(var(--icon-size) / 2);
+	left: calc(var(--icon-size) / 4);
+}
+
+.c-drawer .c-drawer__inner > ul.c-drawer__menu:first-child::before {
+	transform: rotate(45deg);
+}
+
+.c-drawer .c-drawer__inner > ul.c-drawer__menu:first-child::after {
+	transform: rotate(-45deg);
+}
+
+.c-drawer-close-zone {
+	z-index: 100001;
+	width: var(--icon-size);
+	height: var(--icon-size);
+	right: auto;
+	bottom: auto;
+}
+
+.c-hamburger-btn {
+	padding: calc((var(--icon-size) - (var(--icon-line-width) * 3 + var(--icon-hamburger-margin) * 2)) / 2) calc((var(--icon-size) - var(--icon-inner-size)) / 2);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100001;
+}
+
+.c-hamburger-btn__label {
+	display: none;
+}
+
+.c-hamburger-btn__bar {
+	height: var(--icon-line-width);
+	background-color: var(--color-white);
+}
+
+.c-hamburger-btn__bar:nth-of-type(2) {
+	top: calc(var(--icon-line-width) + var(--icon-hamburger-margin));
+}
+
+.c-hamburger-btn__bar:nth-of-type(3) {
+	top: calc(var(--icon-line-width) * 2 + var(--icon-hamburger-margin) * 2);
+}
+
+.c-hamburger-btn__bars {
+	height: calc(var(--icon-line-width) * 3 + var(--icon-hamburger-margin) * 2);
+	width: var(--icon-inner-size);
+	margin: 0;
 }
 
 /* stylelint-disable */
