@@ -1,11 +1,11 @@
 {
-    "accent": "#BA584F",
-    "sub-accent": "#AA9C7D",
-    "base": "#E9E7E3",
-    "body": "#040402",
+    "accent": "#3D8CB8",
+    "sub-accent": "#75C5E5",
+    "base": "#FCF6EF",
+    "body": "#4C2B11",
     "gray01": "#DEDEDE",
     "gray02": "#989898",
-    "gray03": "#565656",
+    "gray03": "#7F7960",
     "error-text": "#9D2D0B",
     "clear-text": "#3F5D29"
 }

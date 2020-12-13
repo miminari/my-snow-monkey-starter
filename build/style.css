@@ -5,41 +5,46 @@
 /* stylelint-disable */
 /* stylelint-enable */
 :root {
-  --color-accent: #BA584F;
-  --color-accent-rgb: 186, 88, 79;
-  --color-sub-accent: #AA9C7D;
-  --color-sub-accent-rgb: 170, 156, 125;
-  --color-base: #E9E7E3;
-  --color-base-rgb: 233, 231, 227;
-  --color-body: #040402;
-  --color-body-rgb: 4, 4, 2;
-  --color-gray01: #DEDEDE;
-  --color-gray01-rgb: 222, 222, 222;
-  --color-gray02: #989898;
-  --color-gray02-rgb: 152, 152, 152;
-  --color-gray03: #565656;
-  --color-gray03-rgb: 86, 86, 86;
+  --color-accent: #3D8CB8;
+  --color-accent-rgb: 61, 140, 184;
+  --color-sub-accent: #75C5E5;
+  --color-sub-accent-rgb: 117, 197, 229;
+  --color-base: #F9F6F2;
+  --color-base-rgb: 249, 246, 242;
+  --color-body: #352111;
+  --color-body-rgb: 53, 33, 17;
+  --color-gray01: #ECEAE6;
+  --color-gray01-rgb: 236, 234, 230;
+  --color-gray02: #D5D3CD;
+  --color-gray02-rgb: 213, 211, 205;
+  --color-gray03: #838076;
+  --color-gray03-rgb: 131, 128, 118;
   --color-error-text: #9D2D0B;
   --color-error-text-rgb: 157, 45, 11;
   --color-clear-text: #3F5D29;
   --color-clear-text-rgb: 63, 93, 41;
-  --_background-color: #E9E7E3;
-  --_color-text: #040402;
-  --header-text-color: #262613;
-  --accent-color: #BA584F;
-  --dark-accent-color: #ab4c43;
-  --light-accent-color: #c16961;
-  --lighter-accent-color: #c87972;
-  --lightest-accent-color: #cf8a84;
-  --sub-accent-color: #AA9C7D;
-  --dark-sub-accent-color: #9e8e6b;
-  --light-sub-accent-color: #b3a68a;
-  --lighter-sub-accent-color: #bbb097;
-  --lightest-sub-accent-color:#c4baa4;
-  --_color-gray: #565656;
-  --_light-color-gray: #DEDEDE;
-  --_lighter-color-gray: #efefef;
-  --_lightest-color-gray: #f8f8f8;
+  --_background-color: #F9F6F2;
+  --_color-text: #352111;
+  --header-text-color: #56361c;
+  --accent-color: #3D8CB8;
+  --dark-accent-color: #377ea6;
+  --light-accent-color: #4c99c4;
+  --lighter-accent-color: #60a4ca;
+  --lightest-accent-color: #74b0d1;
+  --sub-accent-color: #75C5E5;
+  --dark-sub-accent-color: #58b9e0;
+  --light-sub-accent-color: #83cbe8;
+  --lighter-sub-accent-color: #91d1ea;
+  --lightest-sub-accent-color:#9ed6ed;
+  --_color-gray: #838076;
+  --_light-color-gray: #ECEAE6;
+  --_lighter-color-gray: #f6f5f3;
+  --_lightest-color-gray: #fbfbfa;
+}
+
+.c-copyright {
+  background-color: var(--color-base);
+  color: var(--color-gray03);
 }
 
 .c-drawer,
