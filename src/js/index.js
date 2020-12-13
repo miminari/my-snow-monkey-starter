@@ -5,4 +5,4 @@ import applyFocusVisiblePolyfill from 'focus-visible';
 const myGallery = GLightbox( {
 	selector: '.wp-block-gallery .blocks-gallery-item a',
 } );
-const focusVisiblePolyfillReady = applyFocusVisiblePolyfill();
+// const focusVisiblePolyfillReady = applyFocusVisiblePolyfill();
