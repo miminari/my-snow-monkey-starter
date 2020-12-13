@@ -1018,6 +1018,7 @@ iframe.wait-autoplay {
 	}
 }
 /* stylelint-enable */
-.js-focus-visible .c-drawer__menu :focus:not(.focus-visible) {
+.js-focus-visible .c-drawer__menu :focus:not(.focus-visible),
+.js-focus-visible .l-header :focus:not(.focus-visible) {
 	outline: 0;
 }
