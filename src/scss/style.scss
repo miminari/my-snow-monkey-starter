@@ -11,7 +11,6 @@
 
 // ======================================== UTILITY STYLES
 
-
 // ======================================== COMPONENT STYLES
 // @import "components";
 
@@ -29,7 +28,12 @@
 @import "vender/glightbox.min";
 /* stylelint-enable */
 
-// for c-drawer__menu focus
-.js-focus-visible .c-drawer__menu :focus:not(.focus-visible) {
-    outline: 0;
+// for drawer focus
+.js-focus-visible {
+    .c-drawer__menu,
+    .l-header {
+        :focus:not(.focus-visible) {
+            outline: 0;
+        }
+    }
 }
