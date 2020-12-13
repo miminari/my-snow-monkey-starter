@@ -24,12 +24,12 @@
 // ======================================== PAGES, SINGLE STYLES
 // @import "pages";
 
-// ======================================== Front Only STYLES
+// ======================================== FRONT ONLY STYLES
 /* stylelint-disable */
 @import "vender/glightbox.min";
 /* stylelint-enable */
 
-// for focus visible
-.js-focus-visible :focus:not(.focus-visible) {
+// for c-drawer__menu focus
+.js-focus-visible .c-drawer__menu :focus:not(.focus-visible) {
     outline: 0;
 }
