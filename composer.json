@@ -26,6 +26,6 @@
   },
   "scripts": {
     "format": "phpcbf --standard=./.phpcs.xml.dist --report-summary --report-source",
-    "lint": "phpcs"
+    "phpcs": "phpcs"
   }
 }
