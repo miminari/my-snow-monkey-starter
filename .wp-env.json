@@ -8,6 +8,10 @@
         "https://downloads.wordpress.org/plugin/snow-monkey-forms.zip",
         "https://downloads.wordpress.org/plugin/snow-monkey-editor.zip"
     ],
+    "config": {
+		"WP_DEBUG": true,
+		"SCRIPT_DEBUG": true
+	},
     "themes": [
         "./wp-content/themes/snow-monkey"
     ],

@@ -34,6 +34,7 @@
   "author": "photosynthesic",
   "license": "GPL-2.0+",
   "devDependencies": {
+    "@wordpress/env": "^3.0.2",
     "@wordpress/scripts": "7.1.2",
     "autoprefixer": "^9.7.4",
     "husky": "^5.0.4",
