@@ -1,5 +1,6 @@
 /wp-content/*
-
+/dist/my-snow-monkey/*
+/dist/*.zip
 /vendor/*
 /wpcs/*
 node_modules
