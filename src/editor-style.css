@@ -5,23 +5,23 @@
 	--color-accent-rgb: 61, 140, 184;
 	--color-sub-accent: #75c5e5;
 	--color-sub-accent-rgb: 117, 197, 229;
-	--color-base: #f9f6f2;
-	--color-base-rgb: 249, 246, 242;
-	--color-body: #352111;
-	--color-body-rgb: 53, 33, 17;
-	--color-gray01: #eceae6;
-	--color-gray01-rgb: 236, 234, 230;
-	--color-gray02: #d5d3cd;
-	--color-gray02-rgb: 213, 211, 205;
-	--color-gray03: #838076;
-	--color-gray03-rgb: 131, 128, 118;
+	--color-base: #fcf6ef;
+	--color-base-rgb: 252, 246, 239;
+	--color-body: #4c2b11;
+	--color-body-rgb: 76, 43, 17;
+	--color-gray-01: #dedede;
+	--color-gray-01-rgb: 222, 222, 222;
+	--color-gray-02: #989898;
+	--color-gray-02-rgb: 152, 152, 152;
+	--color-gray-03: #7f7960;
+	--color-gray-03-rgb: 127, 121, 96;
 	--color-error-text: #9d2d0b;
 	--color-error-text-rgb: 157, 45, 11;
 	--color-clear-text: #3f5d29;
 	--color-clear-text-rgb: 63, 93, 41;
-	--_background-color: #f9f6f2;
-	--_color-text: #352111;
-	--header-text-color: #56361c;
+	--_background-color: #fcf6ef;
+	--_color-text: #4c2b11;
+	--header-text-color: #6e3e19;
 	--accent-color: #3d8cb8;
 	--dark-accent-color: #377ea6;
 	--light-accent-color: #4c99c4;
@@ -32,8 +32,80 @@
 	--light-sub-accent-color: #83cbe8;
 	--lighter-sub-accent-color: #91d1ea;
 	--lightest-sub-accent-color: #9ed6ed;
-	--_color-gray: #838076;
-	--_light-color-gray: #eceae6;
-	--_lighter-color-gray: #f6f5f3;
-	--_lightest-color-gray: #fbfbfa;
+	--_color-gray: #7f7960;
+	--_light-color-gray: #dedede;
+	--_lighter-color-gray: #efefef;
+	--_lightest-color-gray: #f8f8f8;
+}
+
+.has-accent-color {
+	color: var(--color-accent);
+}
+
+.has-accent-background-color {
+	background-color: var(--color-accent);
+}
+
+.has-sub-accent-color {
+	color: var(--color-sub-accent);
+}
+
+.has-sub-accent-background-color {
+	background-color: var(--color-sub-accent);
+}
+
+.has-base-color {
+	color: var(--color-base);
+}
+
+.has-base-background-color {
+	background-color: var(--color-base);
+}
+
+.has-body-color {
+	color: var(--color-body);
+}
+
+.has-body-background-color {
+	background-color: var(--color-body);
+}
+
+.has-gray-01-color {
+	color: var(--color-gray-01);
+}
+
+.has-gray-01-background-color {
+	background-color: var(--color-gray-01);
+}
+
+.has-gray-02-color {
+	color: var(--color-gray-02);
+}
+
+.has-gray-02-background-color {
+	background-color: var(--color-gray-02);
+}
+
+.has-gray-03-color {
+	color: var(--color-gray-03);
+}
+
+.has-gray-03-background-color {
+	background-color: var(--color-gray-03);
+}
+
+.has-error-text-color {
+	color: var(--color-error-text);
+}
+
+.has-error-text-background-color {
+	background-color: var(--color-error-text);
+}
+
+.has-clear-text-color {
+	color: var(--color-clear-text);
+}
+
+.has-clear-text-background-color {
+	background-color: var(--color-clear-text);
 }

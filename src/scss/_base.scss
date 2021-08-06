@@ -23,10 +23,10 @@
   --light-sub-accent-color: #{color.scale(map.get($theme-colors, sub-accent), $lightness: 10%)};
   --lighter-sub-accent-color: #{color.scale(map.get($theme-colors, sub-accent), $lightness: 20%)};
   --lightest-sub-accent-color:#{color.scale(map.get($theme-colors, sub-accent), $lightness: 30%)};
-  --_color-gray: #{map.get($theme-colors, gray03)};
-  --_light-color-gray: #{map.get($theme-colors, gray01)};
-  --_lighter-color-gray: #{color.scale(map.get($theme-colors, gray01), $lightness: 50%)}; 
-  --_lightest-color-gray: #{color.scale(map.get($theme-colors, gray01), $lightness: 80%)};
+  --_color-gray: #{map.get($theme-colors, gray-03)};
+  --_light-color-gray: #{map.get($theme-colors, gray-01)};
+  --_lighter-color-gray: #{color.scale(map.get($theme-colors, gray-01), $lightness: 50%)}; 
+  --_lightest-color-gray: #{color.scale(map.get($theme-colors, gray-01), $lightness: 80%)};
 }
 
 // 文字色と背景色を書き出し
