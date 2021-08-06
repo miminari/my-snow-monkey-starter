@@ -65,3 +65,8 @@ https://getcomposer.org/doc/00-intro.md
 
 `npm run release`
 
+### 5. dist
+
+`npm run dist`
+
+./dist/ 以下にZIP
