@@ -28,3 +28,13 @@
   --_lighter-color-gray: #{color.scale(map.get($theme-colors, gray01), $lightness: 50%)}; 
   --_lightest-color-gray: #{color.scale(map.get($theme-colors, gray01), $lightness: 80%)};
 }
+
+// 文字色と背景色を書き出し
+@each $key, $color-var in $theme-colors {
+  .has-#{$key}-color {
+    color: var(--color-#{$key});
+  }
+  .has-#{$key}-background-color {
+    background-color: var(--color-#{$key});
+  }
+}
