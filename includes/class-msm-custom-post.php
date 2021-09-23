@@ -59,22 +59,6 @@ if ( ! class_exists( 'Msm_Custom_Post' ) ) {
 			register_post_type( 'gallery', $gallery_args );
 		}
 		/**
-		 * Create FAQ taxonomy.
-		 */
-		public function create_msm_faq_taxonomies() {
-				register_taxonomy(
-					'faqtype',
-					'faq',
-					array(
-						'hierarchical'   => true,
-						'label'          => 'カテゴリー',
-						'singular_label' => 'カテゴリー',
-						'rewrite'        => true,
-					)
-				);
-
-		}
-		/**
 		 *  Add gallery taxonomy
 		 */
 		public function create_msm_gallery_taxonomies() {
