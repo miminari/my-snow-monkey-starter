@@ -2,7 +2,7 @@
 /**
  * 固定ページのページテンプレートを使えるようにする.
  *
- * @since      0.0.1
+ * @since      0.0.2
  *
  * @package    my-snow-monkey
  * @subpackage includes
@@ -16,7 +16,7 @@ if ( ! class_exists( 'Msm_Template' ) ) {
 		/**
 		 * Init
 		 */
-		public function init() {
+		public static function init() {
 			add_filter(
 				'snow_monkey_template_part_root_hierarchy',
 				function( $hierarchy ) {

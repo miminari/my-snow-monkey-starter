@@ -2,7 +2,7 @@
 /**
  * The file that defines the core plugin class
  *
- * @since      0.0.1
+ * @since      0.0.2
  *
  * @package    my-snow-monkey
  * @subpackage includes
@@ -16,7 +16,7 @@ if ( ! class_exists( 'Msm_Customizer' ) ) {
 		/**
 		 * Init
 		 */
-		public function init() {
+		public static function init() {
 			// カスタムCSS, JSの読み込み.
 			add_action(
 				'wp_enqueue_scripts',
@@ -34,7 +34,7 @@ if ( ! class_exists( 'Msm_Customizer' ) ) {
 				12
 			);
 			// カスタムカラーをエディターに反映.
-			$colors = $this->get_custom_color();
+			$colors = self::get_custom_color();
 			add_filter(
 				'snow_monkey_editor_color_palette',
 				function () use ( $colors ) {
@@ -58,9 +58,9 @@ if ( ! class_exists( 'Msm_Customizer' ) ) {
 		/**
 		 * 外部JSONからカスタムカラーを取得する.
 		 */
-		private function get_custom_color() {
+		private static function get_custom_color() {
 			$url        = MSM_CUSTOMISER_PATH . '/color-config.json';
-			$colors     = $this->get_json_data( $url );
+			$colors     = self::get_json_data( $url );
 			$arr_colors = array();
 			foreach ( $colors as $slug => $color ) {
 				$this_color   = array(
@@ -78,7 +78,7 @@ if ( ! class_exists( 'Msm_Customizer' ) ) {
 		 *
 		 * @param string $url json file's url.
 		 */
-		private function get_json_data( $url ) {
+		private static function get_json_data( $url ) {
 			$json = file_get_contents( $url ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
 			$arr  = json_decode( $json, true );
 			return $arr;

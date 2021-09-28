@@ -2,7 +2,7 @@
 /**
  * ブロックのカスタマイズ関連クラス.
  *
- * @since      0.0.1
+ * @since      0.0.2
  *
  * @package    my-snow-monkey
  * @subpackage includes
@@ -16,14 +16,14 @@ if ( ! class_exists( 'Msm_Block_Styles' ) ) {
 		/**
 		 * construct
 		 */
-		public function __construct() {
-			add_action( 'after_setup_theme', array( $this, 'block_style_setup' ) );
+		public static function init() {
+			add_action( 'after_setup_theme', array( get_called_class(), 'block_style_setup' ) );
 		}
 
 		/**
 		 * Add block styles
 		 */
-		public function block_style_setup() {
+		public static function block_style_setup() {
 			/**
 			 * wp-block-button
 			 */

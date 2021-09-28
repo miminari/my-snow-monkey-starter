@@ -8,7 +8,7 @@
  * @wordpress-plugin
  * Plugin Name:       My Snow Monkey Starter Kit
  * Description:       Let's customize Snow Monkey.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            Photosynthesic
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
@@ -32,31 +32,34 @@ define( 'MSM_CUSTOMIZER_URL', untrailingslashit( plugin_dir_url( __FILE__ ) ) );
 define( 'MSM_CUSTOMISER_PATH', untrailingslashit( plugin_dir_path( __FILE__ ) ) );
 
 require MSM_CUSTOMISER_PATH . '/includes/class-msm-customizer.php';
-$msm_customizer = new Msm_Customizer();
-$msm_customizer->init();
-
-/*
- * カスタムテンプレートを利用しない場合はコメントアウト
- */
-require MSM_CUSTOMISER_PATH . '/includes/class-msm-template.php';
-$msm_template = new Msm_Template();
-$msm_template->init();
-
-/*
- * アーカイブ系をカスタムしない場合はコメントアウト
- */
-require MSM_CUSTOMISER_PATH . '/includes/class-msm-archives.php';
-$msm_archives = new Msm_Archives();
-$msm_archives->init();
+Msm_Customizer::init();
 
 /*
  * ブロックスタイルをカスタムしない場合はコメントアウト
  */
 require MSM_CUSTOMISER_PATH . '/includes/class-msm-block-styles.php';
-$msm_block_styles = new Msm_Block_Styles();
+Msm_Block_Styles::init();
 
 /*
  * ブロックパターンをカスタムしない場合はコメントアウト
  */
 require MSM_CUSTOMISER_PATH . '/includes/class-msm-block-pattern.php';
-$msm_block_pattern = new Msm_Block_Pattern();
+Msm_Block_Pattern::init();
+
+/*
+ * アーカイブ系をカスタムしない場合はコメントアウト
+ */
+// require MSM_CUSTOMISER_PATH . '/includes/class-msm-archives.php';
+// Msm_Archives::init();
+
+/*
+ * カスタムテンプレートを利用しない場合はコメントアウト
+ */
+// require MSM_CUSTOMISER_PATH . '/includes/class-msm-template.php';
+// Msm_Template::init();
+
+/*
+ * カスタム投稿タイプをカスタムしない場合はコメントアウト
+ */
+require MSM_CUSTOMISER_PATH . '/includes/class-msm-custom-post.php';
+Msm_Custom_Post::init();

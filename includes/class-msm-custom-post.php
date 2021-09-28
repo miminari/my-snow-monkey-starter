@@ -2,7 +2,7 @@
 /**
  * The file that defines custom post types
  *
- * @since      0.0.1
+ * @since      0.0.2
  *
  * @package    my-snow-monkey
  * @subpackage includes
@@ -17,16 +17,16 @@ if ( ! class_exists( 'Msm_Custom_Post' ) ) {
 		/**
 		 * construct
 		 */
-		public function __construct() {
+		public static function init() {
 			// カスタム投稿タイプの追加.
-			add_action( 'init', array( $this, 'create_msm_post_types' ) );
+			add_action( 'init', array( get_called_class(), 'create_msm_post_types' ) );
 			// カスタムタクソノミーの追加.
-			add_action( 'init', array( $this, 'create_msm_gallery_taxonomies' ) );
+			add_action( 'init', array( get_called_class(), 'create_msm_gallery_taxonomies' ) );
 		}
 		/**
 		 * カスタム投稿タイプの設定.
 		 */
-		public function create_msm_post_types() {
+		public static function create_msm_post_types() {
 			// Add gallery post type.
 			$gallery_labels = array(
 				'name'               => _x( 'ギャラリー', 'post type general name', 'msm' ),
@@ -61,7 +61,7 @@ if ( ! class_exists( 'Msm_Custom_Post' ) ) {
 		/**
 		 *  Add gallery taxonomy
 		 */
-		public function create_msm_gallery_taxonomies() {
+		public static function create_msm_gallery_taxonomies() {
 			register_taxonomy(
 				'phototype',
 				'gallery',

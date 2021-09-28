@@ -2,7 +2,7 @@
 /**
  * アーカイブページのカスタマイズ関連クラス.
  *
- * @since      0.0.1
+ * @since      0.0.2
  *
  * @package    my-snow-monkey
  * @subpackage includes
@@ -16,7 +16,7 @@ if ( ! class_exists( 'Msm_Archives' ) ) {
 		/**
 		 * Init
 		 */
-		public function init() {
+		public static function init() {
 			// アーカイブスタイルをsimpleに、homeのアーカイブスタイルをrich-mediaに変更.
 			add_filter(
 				'snow_monkey_get_template_part_args',
