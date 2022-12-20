@@ -44,15 +44,18 @@ if ( ! class_exists( 'Msm_Customizer' ) ) {
 			/**
 			 * Add custom editor style
 			 * カスタムエディタースタイルを反映.
-			 *
-			 * @return void
 			 */
-			function my_editor_style_setup() {
-				add_theme_support( 'editor-styles' );
-				// テーマからの相対パスで指定.
-				add_editor_style( '../../plugins/my-snow-monkey-starter/build/editor-style.css' );
-			}
-			add_action( 'after_setup_theme', 'my_editor_style_setup', 12 );
+			add_action(
+				'enqueue_block_editor_assets',
+				function() {
+					wp_enqueue_style(
+						'msm-editor-style',
+						MSM_CUSTOMIZER_URL . '/build/editor-style.css',
+						false,
+						filemtime(MSM_CUSTOMISER_PATH . '/build/editor-style.css')
+					);
+				}
+			);
 		}
 
 		/**
