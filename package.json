@@ -38,7 +38,7 @@
   "license": "GPL-2.0+",
   "devDependencies": {
     "@wordpress/env": "^3.0.2",
-    "@wordpress/scripts": "7.1.2",
+    "@wordpress/scripts": "25.0.0",
     "autoprefixer": "^9.7.4",
     "bestzip": "^2.2.0",
     "husky": "^5.0.4",
