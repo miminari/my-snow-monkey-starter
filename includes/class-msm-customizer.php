@@ -33,14 +33,9 @@ if ( ! class_exists( 'Msm_Customizer' ) ) {
 				},
 				12
 			);
-			// カスタムカラーをエディターに反映.
-			$colors = self::get_custom_color();
-			add_filter(
-				'snow_monkey_editor_color_palette',
-				function () use ( $colors ) {
-					return $colors;
-				}
-			);
+			// カスタムカラーをテーマカラーとしてパレットに反映.
+			add_filter( 'wp_theme_json_data_theme', array( get_called_class(), 'set_color_data' ) );
+			
 			/**
 			 * Add custom editor style
 			 * カスタムエディタースタイルを反映.
@@ -56,6 +51,22 @@ if ( ! class_exists( 'Msm_Customizer' ) ) {
 					);
 				}
 			);
+		}
+
+		/**
+		 * カスタムカラーをパレットに読み込み
+		 */
+		public static function set_color_data($theme_json) {
+			$colors = self::get_custom_color();
+			$new_data = array(
+				'version'  => 2,
+				'settings' => array(
+					'color' => array(
+						'palette' => $colors
+					),
+				),
+			);
+			return $theme_json->update_with( $new_data );
 		}
 
 		/**
